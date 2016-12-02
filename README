@@ -1,5 +1,5 @@
 README -- describes contents of hemco_data_download
-04 Mar 2015
+02 Dec 2016
 GEOS-Chem Support Team
 geos-chem-support@as.harvard.edu
 
@@ -142,4 +142,4 @@ to download.  The section looks like this:
  Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
  ...etc ... 
 
--- Bob Yantosca (06 Feb 2015)
+-- Bob Yantosca (02 Dec 2016)
