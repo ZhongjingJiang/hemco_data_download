@@ -37,6 +37,7 @@
 #  28 Apr 2015 - R. Yantosca - Now get COUNTRY_ID/v2015-04 
 #  05 Jun 2015 - R. Yantosca - Now get the officially-released GFED4 data
 #                              product in GFED4/v2015-06
+#  02 Dec 2016 - R. Yantosca - Added new directories for v11-01
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -81,7 +82,7 @@ EDGAR v4.2 global anthro      | $ROOT/EDGARv42/v2015-02
 RETRO VOC emissions           | $ROOT/RETRO/v2014-07/orig_kgC
 Yevich & Logan biofuels       | $ROOT/BIOFUEL/v2014-07
 BRAVO regional anthro         | $ROOT/BRAVO/v2014-07
-CAC regional anthro           | $ROOT/CAC/v2014-07
+CAC regional anthro           | $ROOT/CAC/v2016-09
 EMEP regional anthro          | $ROOT/EMEP/v2015-03
 MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
 MIX regional anthro           | $ROOT/MIX/v2015-03
@@ -103,7 +104,7 @@ ICOADS ship                   | $ROOT/ICOADS_SHIP/v2014-07
 #=============================+================================================
 # BIOMASS                     | Directory paths
 #=============================+================================================
-GFED4 biomass                 | $ROOT/GFED4/v2015-06
+GFED4 biomass                 | $ROOT/GFED4/v2015-10
 GFED3 biomass                 | $ROOT/GFED3/v2014-10
 
 #=============================+================================================
@@ -116,7 +117,7 @@ Liang et al VSL emissions     | $ROOT/BROMINE/v2015-02
 #=============================+================================================
 Acetone ocean exchange        | $ROOT/ACET/v2014-07
 DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
-DMS ocean exchange            | $ROOT/DMS/v2014-07
+DMS ocean exchange            | $ROOT/DMS/v2015-07
 GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
 MEGAN biogenic emissions      | $ROOT/MEGAN/v2015-02
 NO from lightning             | $ROOT/LIGHTNOX/v2014-07
@@ -135,7 +136,7 @@ Aerosol-only simulation       | $ROOT/OFFLINE_AEROSOL/v2014-09
 CH4 simulation                | $ROOT/CH4/v2014-09
 CO2 simulation                | $ROOT/CO2/v2015-04
 Mercury simulation            | $ROOT/MERCURY/v2014-09
-POPs simulation               | $ROOT/POPs/v2014-09
+POPs simulation               | $ROOT/POPs/v2015-08
 Tagged CO simulation          | $ROOT/TAGGED_CO/v2014-08
 Tagged O3 simulation          | $ROOT/TAGGED_O3/v2014-09
 Chlorophyll A                 | $ROOT/CHLA/v2014-07
@@ -149,7 +150,7 @@ H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
 GMI strat chem mechanism      | $ROOT/GMI/v2015-02
 Stratospheric Bry from CCM    | $ROOT/STRAT/v2015-01/Bry
 Timezone offsets from UTC     | $ROOT/TIMEZONES/v2015-02
-TOMS/SBUV O3 columns          | $ROOT/TOMS_SBUV/v2015-03
+TOMS/SBUV O3 columns          | $ROOT/TOMS_SBUV/v2016-11
 UV surface albedoes           | $ROOT/UVALBEDO/v2015-03
 
 #=============================+================================================
@@ -186,5 +187,15 @@ NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
 QFED biomass                  | $ROOT/QFED/v2014-09
 TNO inventory                 | $ROOT/TNO/
 Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# %%% Data replaced by newer versions in v11-01        %%%
+# %%% If you need the older versions, move these above %%%
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CAC regional anthro           | $ROOT/CAC/v2014-07
+DMS ocean exchange            | $ROOT/DMS/v2014-07
+GFED4 biomass                 | $ROOT/GFED4/v2015-06
+POPs simulation               | $ROOT/POPs/v2014-09
+TOMS/SBUV O3 columns          | $ROOT/TOMS_SBUV/v2015-03
 
 #EOC
