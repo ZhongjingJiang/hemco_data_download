@@ -38,6 +38,7 @@
 #  05 Jun 2015 - R. Yantosca - Now get the officially-released GFED4 data
 #                              product in GFED4/v2015-06
 #  02 Dec 2016 - R. Yantosca - Added new directories for v11-01
+#  22 Jun 2018 - R. Yantosca - Added new directories for GC v11-02-rc / GC 12
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -72,17 +73,20 @@ Dryrun only?           | no
 AEROCOM volcano emissions     | $ROOT/VOLCANO/v2015-02
 Bond et al BC/OC              | $ROOT/BCOC_BOND/v2014-07
 Secondary organic aerosols    | $ROOT/SOA/v2014-07
+Spatially varying OM/OC ratios| $ROOT/OMOC/v2018-01
 
 #=============================+================================================
 # ANTHROPOGENIC + BIOFUELS    | Directory paths
 #=============================+================================================
+CEDS global anthro            | $ROOT/CEDS/v2018-04
+C2H6_2010 global emissions    | $ROOT/C2H6_2010/v2017-05
+DICE-Africa anthro            | $ROOT/DICE_Africa/v2016-10
 GEIA global anthro            | $ROOT/GEIA/v2014-07
 GEIA NH3                      | $ROOT/NH3/v2014-07
-EDGAR v4.2 global anthro      | $ROOT/EDGARv42/v2015-02
 RETRO VOC emissions           | $ROOT/RETRO/v2014-07/orig_kgC
+POET EOH emissions            | $ROOT/POET/v2017-03
 Yevich & Logan biofuels       | $ROOT/BIOFUEL/v2014-07
 BRAVO regional anthro         | $ROOT/BRAVO/v2014-07
-CAC regional anthro           | $ROOT/CAC/v2016-09
 EMEP regional anthro          | $ROOT/EMEP/v2015-03
 MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
 MIX regional anthro           | $ROOT/MIX/v2015-03
@@ -90,11 +94,13 @@ NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
 NEI2005/VISTAS scale factors  | $ROOT/VISTAS/v2014-07
 NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-03
 NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-03
-Streets regional anthro       | $ROOT/STREETS/v2014-07
+Trash burning emissions       | $ROOT/TrashEmis/v2015-03
 Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09
 
 #=============================+================================================
 # ANTHRO AIRCRAFT + SHIPS     | Directory paths
+#
+# NOTE: EMEP ship emissions are a subset of the EMEP anthro folder above.
 #=============================+================================================
 AEIC aircraft                 | $ROOT/AEIC/v2015-01
 ARCTAS ship                   | $ROOT/ARCTAS_SHIP/v2014-07
@@ -108,9 +114,15 @@ GFED4 biomass                 | $ROOT/GFED4/v2015-10
 GFED3 biomass                 | $ROOT/GFED3/v2014-10
 
 #=============================+================================================
-# BROMINE                     | Directory paths
+# Halogen emissions           | Directory paths
 #=============================+================================================
 Liang et al VSL emissions     | $ROOT/BROMINE/v2015-02
+Ordonez et al Iodine emissions| $ROOT/IODINE/v2017-03
+
+#=============================+================================================
+# Natural emissions           | Directory paths
+#=============================+================================================
+NH3 from arctic sea birds     | $ROOT/NH3/v2018-04
 
 #=============================+================================================
 # EMISSIONS via EXTENSIONS    | Directory paths
@@ -125,8 +137,9 @@ NO from soils/fertilizers     | $ROOT/SOILNOX/v2014-07
 PARANOX ship plume model      | $ROOT/PARANOX/v2015-02
 
 #=============================+================================================
-# FUTURE & HISTORICAL         | Directory paths
+# FUTURE & HISTORICAL EMISS.  | Directory paths
 #=============================+================================================
+APEI historical Canadian emiss| $ROOT/APEI/v2016-11
 RCP future scenarios          | $ROOT/RCP/v2015-02
 
 #=============================+================================================
@@ -136,6 +149,7 @@ Aerosol-only simulation       | $ROOT/OFFLINE_AEROSOL/v2014-09
 CH4 simulation                | $ROOT/CH4/v2014-09
 CO2 simulation                | $ROOT/CO2/v2015-04
 Mercury simulation            | $ROOT/MERCURY/v2014-09
+Mercury simulation            | $ROOT/MERCURY/v2018-04
 POPs simulation               | $ROOT/POPs/v2015-08
 Tagged CO simulation          | $ROOT/TAGGED_CO/v2014-08
 Tagged O3 simulation          | $ROOT/TAGGED_O3/v2014-09
@@ -175,27 +189,20 @@ Country ID's (ISO ALPHA-3)    | $ROOT/COUNTRY_ID/v2015-04
 CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
 Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
 Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
+EDGAR v4.3 anthro             | $ROOT/EDGARv43/v2016-11
 EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
-FINN biomass                  | $ROOT/FINN/v2014-07
+FINN v1.5 biomass             | $ROOT/FINN/v2014-07
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
 HTAP anthro + biofuel         | $ROOT/HTAP/v2015-03
 MACCITY anthro                | $ROOT/MACCITY/v2014-07
+MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
 NEI1999 regional anthro 1     | $ROOT/NEI99/200411
 NEI1999 regional anthro 2     | $ROOT/NEI99/200708
 NEI1999 regional anthro 3     | $ROOT/NEI99/200806
 NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
 QFED biomass                  | $ROOT/QFED/v2014-09
 TNO inventory                 | $ROOT/TNO/
+Streets regional anthro       | $ROOT/STREETS/v2014-07
 Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
-
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# %%% Data replaced by newer versions in v11-01        %%%
-# %%% If you need the older versions, move these above %%%
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-CAC regional anthro           | $ROOT/CAC/v2014-07
-DMS ocean exchange            | $ROOT/DMS/v2014-07
-GFED4 biomass                 | $ROOT/GFED4/v2015-06
-POPs simulation               | $ROOT/POPs/v2014-09
-TOMS/SBUV O3 columns          | $ROOT/TOMS_SBUV/v2015-03
 
 #EOC
