@@ -39,6 +39,7 @@
 #                              product in GFED4/v2015-06
 #  02 Dec 2016 - R. Yantosca - Added new directories for v11-01
 #  22 Jun 2018 - R. Yantosca - Added new directories for GC v11-02-rc / GC 12
+#  02 Jul 2018 - R. Yantosca - Further updates for v11-02-final/12.0.0
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -95,7 +96,6 @@ NEI2005/VISTAS scale factors  | $ROOT/VISTAS/v2014-07
 NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-03
 NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-03
 Trash burning emissions       | $ROOT/TrashEmis/v2015-03
-Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09
 
 #=============================+================================================
 # ANTHRO AIRCRAFT + SHIPS     | Directory paths
@@ -131,8 +131,9 @@ Acetone ocean exchange        | $ROOT/ACET/v2014-07
 DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
 DMS ocean exchange            | $ROOT/DMS/v2015-07
 GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
-MEGAN biogenic emissions      | $ROOT/MEGAN/v2015-02
-NO from lightning             | $ROOT/LIGHTNOX/v2014-07
+MEGAN biogenic emissions #1   | $ROOT/MEGAN/v2017-07
+MEGAN biogenic emissions #2   | $ROOT/MEGAN/v2018-05
+NO from lightning             | $ROOT/LIGHTNOX/v2017-09
 NO from soils/fertilizers     | $ROOT/SOILNOX/v2014-07
 PARANOX ship plume model      | $ROOT/PARANOX/v2015-02
 
@@ -165,6 +166,7 @@ GMI strat chem mechanism      | $ROOT/GMI/v2015-02
 Stratospheric Bry from CCM    | $ROOT/STRAT/v2015-01/Bry
 Timezone offsets from UTC     | $ROOT/TIMEZONES/v2015-02
 TOMS/SBUV O3 columns          | $ROOT/TOMS_SBUV/v2016-11
+UCX chemistry mechanism       | $ROOT/UCX/v2018-02
 UV surface albedoes           | $ROOT/UVALBEDO/v2015-03
 
 #=============================+================================================
@@ -186,9 +188,10 @@ Country ID's (ISO ALPHA-3)    | $ROOT/COUNTRY_ID/v2015-04
 #                                                                             #
 ###############################################################################
 
-CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
 Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
 Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
+CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
+AFCID anthro PM2.5            | $ROOT/DUST_DEAD/v2018-04
 EDGAR v4.3 anthro             | $ROOT/EDGARv43/v2016-11
 EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
 FINN v1.5 biomass             | $ROOT/FINN/v2014-07
@@ -196,13 +199,15 @@ GFED2 biomass                 | $ROOT/GFED2/v2014-07
 HTAP anthro + biofuel         | $ROOT/HTAP/v2015-03
 MACCITY anthro                | $ROOT/MACCITY/v2014-07
 MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
+MEGAN biogenic emissions      | $ROOT/MEGAN/v2015-02
 NEI1999 regional anthro 1     | $ROOT/NEI99/200411
 NEI1999 regional anthro 2     | $ROOT/NEI99/200708
 NEI1999 regional anthro 3     | $ROOT/NEI99/200806
 NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
 QFED biomass                  | $ROOT/QFED/v2014-09
-TNO inventory                 | $ROOT/TNO/
 Streets regional anthro       | $ROOT/STREETS/v2014-07
+TNO inventory                 | $ROOT/TNO/
 Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
+Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09
 
 #EOC
