@@ -111,7 +111,6 @@ ICOADS ship                   | $ROOT/ICOADS_SHIP/v2014-07
 # BIOMASS                     | Directory paths
 #=============================+================================================
 GFED4 biomass                 | $ROOT/GFED4/v2015-10
-GFED3 biomass                 | $ROOT/GFED3/v2014-10
 
 #=============================+================================================
 # Halogen emissions           | Directory paths
@@ -152,7 +151,7 @@ CO2 simulation                | $ROOT/CO2/v2015-04
 Mercury simulation            | $ROOT/MERCURY/v2014-09
 Mercury simulation            | $ROOT/MERCURY/v2018-04
 POPs simulation               | $ROOT/POPs/v2015-08
-Tagged CO simulation          | $ROOT/TAGGED_CO/v2014-08
+Tagged CO simulation          | $ROOT/TAGGED_CO/v2017-04
 Tagged O3 simulation          | $ROOT/TAGGED_O3/v2014-09
 Chlorophyll A                 | $ROOT/CHLA/v2014-07
 O3 for offline simulations    | $ROOT/O3/v2014-09
@@ -196,6 +195,7 @@ EDGAR v4.3 anthro             | $ROOT/EDGARv43/v2016-11
 EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
 FINN v1.5 biomass             | $ROOT/FINN/v2014-07
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
+GFED3 biomass                 | $ROOT/GFED3/v2014-10
 HTAP anthro + biofuel         | $ROOT/HTAP/v2015-03
 MACCITY anthro                | $ROOT/MACCITY/v2014-07
 MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
@@ -206,6 +206,7 @@ NEI1999 regional anthro 3     | $ROOT/NEI99/200806
 NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
 QFED biomass                  | $ROOT/QFED/v2014-09
 Streets regional anthro       | $ROOT/STREETS/v2014-07
+Tagged CO simulation          | $ROOT/TAGGED_CO/v2014-08
 TNO inventory                 | $ROOT/TNO/
 Weekly scale factors          | $ROOT/WEEKSCALE/v2014-07
 Yaping Xiao C2H6 and C3H8     | $ROOT/XIAO/v2014-09
