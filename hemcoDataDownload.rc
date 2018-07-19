@@ -78,10 +78,14 @@ Spatially varying OM/OC ratios| $ROOT/OMOC/v2018-01
 
 #=============================+================================================
 # ANTHROPOGENIC + BIOFUELS    | Directory paths
+#
+# NOTE: Some sectors of EDGARv43 are used with DICE-Africa, so we have
+# arranged for EDGARv43 to be downloaded by default below. (bmy, 7/19/18)
 #=============================+================================================
 CEDS global anthro            | $ROOT/CEDS/v2018-04
 C2H6_2010 global emissions    | $ROOT/C2H6_2010/v2017-05
 DICE-Africa anthro            | $ROOT/DICE_Africa/v2016-10
+EDGAR v4.3 anthro             | $ROOT/EDGARv43/v2016-11
 GEIA global anthro            | $ROOT/GEIA/v2014-07
 GEIA NH3                      | $ROOT/NH3/v2014-07
 RETRO VOC emissions           | $ROOT/RETRO/v2014-07/orig_kgC
@@ -191,7 +195,6 @@ Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
 Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
 CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
 AFCID anthro PM2.5            | $ROOT/DUST_DEAD/v2018-04
-EDGAR v4.3 anthro             | $ROOT/EDGARv43/v2016-11
 EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
 FINN v1.5 biomass             | $ROOT/FINN/v2014-07
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
@@ -204,6 +207,7 @@ NEI1999 regional anthro 1     | $ROOT/NEI99/200411
 NEI1999 regional anthro 2     | $ROOT/NEI99/200708
 NEI1999 regional anthro 3     | $ROOT/NEI99/200806
 NEI2008 regional anthro/biof  | $ROOT/NEI2008/v2015-02
+QFED biomass                  | $ROOT/QFED/v2018-07
 QFED biomass                  | $ROOT/QFED/v2014-09
 Streets regional anthro       | $ROOT/STREETS/v2014-07
 Tagged CO simulation          | $ROOT/TAGGED_CO/v2014-08
