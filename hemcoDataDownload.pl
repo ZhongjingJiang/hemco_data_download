@@ -221,25 +221,46 @@ sub downloadHemcoData(%) {
 # !LOCAL VARIABLES: 
 #
   # Strings
-  my $cmd     = "";
-  my $invName = "";
-  my $invPath = "";
-  my $result  = "";
-  my @substrs = ();
-  my $cutDirs = 0;
-  my $refDir  = qx/pwd/;
+  my $cmd        = "";
+  my $invName    = "";
+  my $invPath    = "";
+  my $result     = "";
+  my $refDir     = qx/pwd/;
 
-  # Make sure the local HEMCO root directory exists
-  if ( !( -d $HEMCO_LOCAL_ROOT ) ) { 
-    $result = qx/mkdirhier $HEMCO_LOCAL_ROOT/;
-    print "$result\n";
-  }
+  # Scalars
+  my $cutDirs    = 0;
+  my $isDownLoad = 0;
+  my $isVerbose  = 0;
+
+  # Arrays
+  my @substrs    = ();
 
   # Find the # of directories to cut 
   @substrs = split( "/", $HEMCO_REMOTE_ROOT );
   $cutDirs = scalar( @substrs ) - 3;
 
-  print "VERBOSE\n";
+  # Test if the verbose option has been selected
+  if ( $VERBOSE =~ m/[Yy][Ee][Ss]/ ) { $isVerbose  = 1; }
+  else                               { $isVerbose  = 0; }
+  
+  # Test if we are going to download data (or if it's a dryrun)
+  if ( $DRYRUN  =~ m/[Yy][Ee][Ss]/ ) { $isDownLoad = 0; }
+  else                               { $isDownLoad = 1; }
+
+  # Make sure the local HEMCO root directory exists; or
+  # create it if it doesn't exits.  (Skip for dryrun.)
+  if ( $isDownLoad == 1 ) {
+     if ( !( -d $HEMCO_LOCAL_ROOT ) ) { 
+
+       # Create command to make the directory
+       $cmd = "mkdir -p $HEMCO_LOCAL_ROOT/";
+       if ( $isVerbose == 1 ) { print "$cmd\n"; } 
+
+       # Execute the command
+       $result = qx/$cmd/;
+       if ( $isVerbose == 1 ) { print "$result\n"; }
+     }
+   }
 
   # Text-replace the proper color for each unit test
   while ( ( $invName, $invPath ) = each( %inventory ) ) { 
@@ -250,14 +271,14 @@ sub downloadHemcoData(%) {
     # Create the command for the data download via wget
     $cmd = qq/cd $HEMCO_LOCAL_ROOT; wget -r -nH -c -N -q --cut-dirs=$cutDirs "$invPath"; cd $refDir/;
 
-    # Download the data!
-    if ( $DRYRUN =~ m/[Nn][Oo]/ ) {
+    # Print name of directory being downloaded
+    print "Now downloading '$invName'...\n";
+    if ( $isVerbose == 1 ) { print "$cmd\n"; }
 
-      print "Now downloading '$invName'...\n";
-      if ( $VERBOSE =~ m/[Yy][Ee][Ss]/ ) { print "$cmd\n"; }
-
+    # Download the data!  (Skip for dryrun.)
+    if ( $isDownLoad == 1 ) {
       $result = qx/$cmd/;
-      if ( $VERBOSE =~ m/[Yy][Ee][Ss]/ ) { print "$result\n"; }
+      if ( $isVerbose == 1 ) { print "$result\n"; }
     }
   }
 

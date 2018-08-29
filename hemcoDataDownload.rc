@@ -40,6 +40,7 @@
 #  02 Dec 2016 - R. Yantosca - Added new directories for v11-01
 #  22 Jun 2018 - R. Yantosca - Added new directories for GC v11-02-rc / GC 12
 #  02 Jul 2018 - R. Yantosca - Further updates for v11-02-final/12.0.0
+#  29 Aug 2018 - R. Yantosca - Add missing NEI2011 monthly mean data
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -98,6 +99,7 @@ MIX regional anthro           | $ROOT/MIX/v2015-03
 NEI2005 regional anthro/biof  | $ROOT/NEI2005/v2014-09
 NEI2005/VISTAS scale factors  | $ROOT/VISTAS/v2014-07
 NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-03
+NEI2011 regional monthly mean | $ROOT/NEI2011/v2017-02-MM/
 NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-03
 Trash burning emissions       | $ROOT/TrashEmis/v2015-03
 
