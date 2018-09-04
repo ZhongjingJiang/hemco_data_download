@@ -41,6 +41,8 @@
 #  22 Jun 2018 - R. Yantosca - Added new directories for GC v11-02-rc / GC 12
 #  02 Jul 2018 - R. Yantosca - Further updates for v11-02-final/12.0.0
 #  29 Aug 2018 - R. Yantosca - Add missing NEI2011 monthly mean data
+#  04 Sep 2018 - R. Yantosca - Remove hashes from MEGAN lines (#1, #2)
+#  04 Sep 2018 - R. Yantosca - Further updates: IODINE, Seawater ALD2, Methane
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -122,7 +124,7 @@ GFED4 biomass                 | $ROOT/GFED4/v2015-10
 # Halogen emissions           | Directory paths
 #=============================+================================================
 Liang et al VSL emissions     | $ROOT/BROMINE/v2015-02
-Ordonez et al Iodine emissions| $ROOT/IODINE/v2017-03
+Ordonez et al Iodine emissions| $ROOT/IODINE/v2017-09
 
 #=============================+================================================
 # Natural emissions           | Directory paths
@@ -136,8 +138,8 @@ Acetone ocean exchange        | $ROOT/ACET/v2014-07
 DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
 DMS ocean exchange            | $ROOT/DMS/v2015-07
 GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
-MEGAN biogenic emissions #1   | $ROOT/MEGAN/v2017-07
-MEGAN biogenic emissions #2   | $ROOT/MEGAN/v2018-05
+MEGAN biogenic emissions 1    | $ROOT/MEGAN/v2017-07
+MEGAN biogenic emissions 2    | $ROOT/MEGAN/v2018-05
 NO from lightning             | $ROOT/LIGHTNOX/v2017-09
 NO from soils/fertilizers     | $ROOT/SOILNOX/v2014-07
 PARANOX ship plume model      | $ROOT/PARANOX/v2015-02
@@ -168,6 +170,8 @@ H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
 # NON-EMISSIONS DATA          | Directory paths
 #=============================+================================================
 GMI strat chem mechanism      | $ROOT/GMI/v2015-02
+NOAA GMD Methane              | $ROOT/NOAA_GMD/v2018-01
+Seawater ALD2 concentration   | $ROOT/ALD2/v2017-03
 Stratospheric Bry from CCM    | $ROOT/STRAT/v2015-01/Bry
 Timezone offsets from UTC     | $ROOT/TIMEZONES/v2015-02
 TOMS/SBUV O3 columns          | $ROOT/TOMS_SBUV/v2016-11
