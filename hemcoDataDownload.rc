@@ -43,6 +43,7 @@
 #  29 Aug 2018 - R. Yantosca - Add missing NEI2011 monthly mean data
 #  04 Sep 2018 - R. Yantosca - Remove hashes from MEGAN lines (#1, #2)
 #  04 Sep 2018 - R. Yantosca - Further updates: IODINE, Seawater ALD2, Methane
+#  02 Nov 2018 - R. Yantosca - Add RRTMG/v2018-11 folder
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -165,6 +166,7 @@ Chlorophyll A                 | $ROOT/CHLA/v2014-07
 O3 for offline simulations    | $ROOT/O3/v2014-09
 OH for offline simulations    | $ROOT/OH/v2014-09
 H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
+RRTMG rad transfer simulations| $ROOT/RRTMG/v2018-11
 
 #=============================+================================================
 # NON-EMISSIONS DATA          | Directory paths
