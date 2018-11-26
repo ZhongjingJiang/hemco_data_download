@@ -105,16 +105,24 @@ NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-03
 NEI2011 regional monthly mean | $ROOT/NEI2011/v2017-02-MM/
 NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-03
 Trash burning emissions       | $ROOT/TrashEmis/v2015-03
-
 #=============================+================================================
 # ANTHRO AIRCRAFT + SHIPS     | Directory paths
 #
-# NOTE: EMEP ship emissions are a subset of the EMEP anthro folder above.
+# NOTES:
+# (1) CEDS ship emissions (which are a subset of the CEDS anthro folder above)
+#     are now the default global ship inventory in GEOS-Chem 12.1.0 and later.
+# (2) If CEDS ship emissions are turned off, then
+#     (a) ARCTAS should be used over ICOADS, CORBETT, and HTAP for SO2 and
+#     (b) ICOADS should be used for CO and NO.
+# (3) Ship emisisons over Europe are ovewritten by EMEP.
+# (4) The ship inventory for NEI11 only goes a few km from land, so it isn’t
+#     a complete 'ship inventory'. NEI2011_SHIP_* is set to false for now.
+# (5) Ship NO emissions are used by PARANOx and the extension number must be
+#     adjusted accordingly in the HEMCO_Config.rc file.
+# (6) EMEP ship emissions (for Europe) are a subset of the EMEP anthro
+#     emissions folder listed above.
 #=============================+================================================
 AEIC aircraft                 | $ROOT/AEIC/v2015-01
-ARCTAS ship                   | $ROOT/ARCTAS_SHIP/v2014-07
-Corbett ship                  | $ROOT/CORBETT_SHIP/v2014-07
-ICOADS ship                   | $ROOT/ICOADS_SHIP/v2014-07
 
 #=============================+================================================
 # BIOMASS                     | Directory paths
@@ -137,6 +145,7 @@ NH3 from arctic sea birds     | $ROOT/NH3/v2018-04
 #=============================+================================================
 Acetone ocean exchange        | $ROOT/ACET/v2014-07
 DEAD dust model               | $ROOT/DUST_DEAD/v2014-07
+AFCID anthro PM2.5            | $ROOT/DUST_DEAD/v2018-04
 DMS ocean exchange            | $ROOT/DMS/v2015-07
 GINOUX dust model             | $ROOT/DUST_GINOUX/v2014-07
 MEGAN biogenic emissions 1    | $ROOT/MEGAN/v2017-07
@@ -199,15 +208,17 @@ Country ID's (ISO ALPHA-3)    | $ROOT/COUNTRY_ID/v2015-04
 #                                                                             #
 ###############################################################################
 
+ARCTAS ship                   | $ROOT/ARCTAS_SHIP/v2014-07
 Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
+Corbett ship                  | $ROOT/CORBETT_SHIP/v2014-07
 Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
 CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
-AFCID anthro PM2.5            | $ROOT/DUST_DEAD/v2018-04
 EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
 FINN v1.5 biomass             | $ROOT/FINN/v2014-07
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
 GFED3 biomass                 | $ROOT/GFED3/v2014-10
 HTAP anthro + biofuel         | $ROOT/HTAP/v2015-03
+ICOADS ship                   | $ROOT/ICOADS_SHIP/v2014-07
 MACCITY anthro                | $ROOT/MACCITY/v2014-07
 MASAGE agricultural NH3       | $ROOT/MASAGE_NH3/v2015-02
 MEGAN biogenic emissions      | $ROOT/MEGAN/v2015-02
