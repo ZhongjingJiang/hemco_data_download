@@ -85,6 +85,17 @@ Spatially varying OM/OC ratios| $ROOT/OMOC/v2018-01
 #
 # NOTE: Some sectors of EDGARv43 are used with DICE-Africa, so we have
 # arranged for EDGARv43 to be downloaded by default below. (bmy, 7/19/18)
+#
+# ALSO NOTE: You can further restrict the download of CEDS data by adding
+# lines only for those years that you would like to download, e.g.:
+# individual years, such as:
+#
+#    CEDS global anthro            | $ROOT/CEDS/v2018-08/2000
+#    CEDS global anthro            | $ROOT/CEDS/v2018-08/2001
+#    CEDS global anthro            | $ROOT/CEDS/v2018-08/2002
+#    etc.
+#
+# Otherwise, it will download all of the CEDS data from 1950-2014.
 #=============================+================================================
 CEDS global anthro            | $ROOT/CEDS/v2018-08
 C2H6_2010 global emissions    | $ROOT/C2H6_2010/v2017-05
@@ -167,6 +178,7 @@ RCP future scenarios          | $ROOT/RCP/v2015-02
 Aerosol-only simulation       | $ROOT/OFFLINE_AEROSOL/v2014-09
 CH4 simulation                | $ROOT/CH4/v2014-09
 CO2 simulation                | $ROOT/CO2/v2015-04
+CO2 simulation (chem source)  | $ROOT/CO2/v2015-09
 Mercury simulation            | $ROOT/MERCURY/v2014-09
 Mercury simulation            | $ROOT/MERCURY/v2018-04
 POPs simulation               | $ROOT/POPs/v2015-08
@@ -219,6 +231,7 @@ Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
 CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
 EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
 FINN v1.5 biomass             | $ROOT/FINN/v2014-07
+FINN for TOMAS                | $ROOT/FINN/v2015-02
 GFAS biomass                  | $ROOT/GFAS/v2018-09
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
 GFED3 biomass                 | $ROOT/GFED3/v2014-10
