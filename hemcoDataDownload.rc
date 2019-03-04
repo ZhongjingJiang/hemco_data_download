@@ -86,7 +86,7 @@ Spatially varying OM/OC ratios| $ROOT/OMOC/v2018-01
 # NOTE: Some sectors of EDGARv43 are used with DICE-Africa, so we have
 # arranged for EDGARv43 to be downloaded by default below. (bmy, 7/19/18)
 #=============================+================================================
-CEDS global anthro            | $ROOT/CEDS/v2018-04
+CEDS global anthro            | $ROOT/CEDS/v2018-08
 C2H6_2010 global emissions    | $ROOT/C2H6_2010/v2017-05
 DICE-Africa anthro            | $ROOT/DICE_Africa/v2016-10
 EDGAR v4.3 anthro             | $ROOT/EDGARv43/v2016-11
@@ -105,6 +105,7 @@ NEI2011 regional anthro/biof  | $ROOT/NEI2011/v2015-03
 NEI2011 regional monthly mean | $ROOT/NEI2011/v2017-02-MM/
 NEI2011 agric. emissions only | $ROOT/NEI2011_ag_only/v2015-03
 Trash burning emissions       | $ROOT/TrashEmis/v2015-03
+
 #=============================+================================================
 # ANTHRO AIRCRAFT + SHIPS     | Directory paths
 #
@@ -176,6 +177,7 @@ O3 for offline simulations    | $ROOT/O3/v2014-09
 OH for offline simulations    | $ROOT/OH/v2014-09
 H2O2 for offline simulations  | $ROOT/OXIDANTS/v2014-07
 RRTMG rad transfer simulations| $ROOT/RRTMG/v2018-11
+SF6 emissions from EDGAR v4.2 | $ROOT/SF6/v2019-01
 
 #=============================+================================================
 # NON-EMISSIONS DATA          | Directory paths
@@ -194,6 +196,7 @@ UV surface albedoes           | $ROOT/UVALBEDO/v2015-03
 #=============================+================================================
 Annual scale factors          | $ROOT/AnnualScalar/v2014-07
 Mask files                    | $ROOT/MASKS/v2014-07
+Mask files                    | $ROOT/MASKS/v2018-09
 MAP_A2A regridding data       | $ROOT/MAP_A2A/v2014-07
 Country ID's (ISO ALPHA-3)    | $ROOT/COUNTRY_ID/v2015-04
 
@@ -209,12 +212,14 @@ Country ID's (ISO ALPHA-3)    | $ROOT/COUNTRY_ID/v2015-04
 ###############################################################################
 
 ARCTAS ship                   | $ROOT/ARCTAS_SHIP/v2014-07
+CEDS global anthro            | $ROOT/CEDS/v2018-04
 Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
 Corbett ship                  | $ROOT/CORBETT_SHIP/v2014-07
 Duncan et al biomass          | $ROOT/BIOBURN/v2014-07
 CH3I simulation (obsolete)    | $ROOT/CH3I/v2014-07
 EDGAR v3 global anthro        | $ROOT/EDGAR/v2014-07
 FINN v1.5 biomass             | $ROOT/FINN/v2014-07
+GFAS biomass                  | $ROOT/GFAS/v2018-09
 GFED2 biomass                 | $ROOT/GFED2/v2014-07
 GFED3 biomass                 | $ROOT/GFED3/v2014-10
 HTAP anthro + biofuel         | $ROOT/HTAP/v2015-03
