@@ -44,6 +44,7 @@
 #  04 Sep 2018 - R. Yantosca - Remove hashes from MEGAN lines (#1, #2)
 #  04 Sep 2018 - R. Yantosca - Further updates: IODINE, Seawater ALD2, Methane
 #  02 Nov 2018 - R. Yantosca - Add RRTMG/v2018-11 folder
+#  08 Mar 2019 - R. Yantosca - Update to 12.3.0
 #EOP
 #------------------------------------------------------------------------------
 #BOC
@@ -75,8 +76,8 @@ Dryrun only?           | no
 #=============================+================================================
 # AEROSOLS                    | Directory paths
 #=============================+================================================
-AEROCOM volcano emissions     | $ROOT/VOLCANO/v2015-02
 Bond et al BC/OC              | $ROOT/BCOC_BOND/v2014-07
+OMI-based volcanic emissions  | $ROOT/VOLCANO/v2019-03
 Secondary organic aerosols    | $ROOT/SOA/v2014-07
 Spatially varying OM/OC ratios| $ROOT/OMOC/v2018-01
 
@@ -195,7 +196,9 @@ SF6 emissions from EDGAR v4.2 | $ROOT/SF6/v2019-01
 # NON-EMISSIONS DATA          | Directory paths
 #=============================+================================================
 GMI strat chem mechanism      | $ROOT/GMI/v2015-02
+MODIS XLAI                    | $ROOT/MODIS_XLAI/v2017-07
 NOAA GMD Methane              | $ROOT/NOAA_GMD/v2018-01
+Olson map                     | $ROOT/OLSON_MAP/v2019-02
 Seawater ALD2 concentration   | $ROOT/ALD2/v2017-03
 Stratospheric Bry from CCM    | $ROOT/STRAT/v2015-01/Bry
 Timezone offsets from UTC     | $ROOT/TIMEZONES/v2015-02
@@ -223,6 +226,7 @@ Country ID's (ISO ALPHA-3)    | $ROOT/COUNTRY_ID/v2015-04
 #                                                                             #
 ###############################################################################
 
+AEROCOM volcano emissions     | $ROOT/VOLCANO/v2015-02
 ARCTAS ship                   | $ROOT/ARCTAS_SHIP/v2014-07
 CEDS global anthro            | $ROOT/CEDS/v2018-04
 Cooke et al BC/OC             | $ROOT/BCOC_COOKE/v2014-07
