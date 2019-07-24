@@ -1,5 +1,5 @@
 README -- describes contents of hemco_data_download
-02 Dec 2016
+24 Jul 2019
 GEOS-Chem Support Team
 geos-chem-support@as.harvard.edu
 
@@ -7,9 +7,13 @@ geos-chem-support@as.harvard.edu
 Overview:
 ===============================================================================
 
-This package contains a Perl script and configuration files that let you
-download the HEMCO data directories to your local disk space.  This is a
-convenience routine.
+The HEMCO data downloader contains a Perl script and configuration files
+that let you download the HEMCO data directories to your local disk space.
+This is a convenience routine.
+
+This package is distributed under the MIT license.  Please read the license
+documents LICENSE.txt and AUTHORS.txt, both of which are located in the
+root folder.
 
 
 Files:
